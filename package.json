@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
 		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details",
-		"lint": "eslint ./src/** .eslintrc.cjs vite.config.ts",
+		"lint": "eslint ./**/*.{js,mjs,cjs,ts,mts} --ignore-pattern node_modules --ignore-pattern **/analytics.js",
 		"lint:fix": "npx eslint --fix ./",
 		"stylelint": "npx stylelint \"**/*.scss\"",
 		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
