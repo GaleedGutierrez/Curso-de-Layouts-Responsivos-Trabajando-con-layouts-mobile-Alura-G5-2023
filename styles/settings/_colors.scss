@@ -1,0 +1,66 @@
+// Base colors
+$_white: #fff;
+$_cultured: #f7f4f4;
+$_azureish-white: #dfe3f5;
+$_platinum: #dfe3e5;
+$_silver-sand: #c4c4c4;
+$_granite-ray: #666;
+$_dark-liver: #4f4c4c;
+$_dark-charcoal: #333;
+$_black: #000;
+$_blue: #0006ff;
+$_blues-apphire: #035a76;
+$_warm-black: #103d4a;
+$_rich-black: #00161c;
+$_cinnabar: #e33b3b;
+$_international-orange: #b72e2e;
+$_alabama-crimson: #b00024;
+$_chinese-purple: #690f8e;
+
+// Gral
+// Gral__White
+$pure-white: $_cultured;
+
+// Gral__Gray
+$light-gray: $_azureish-white;
+$light-gray-100: $_platinum;
+$dark-gray: $_dark-liver;
+$dark-gray-100: $_silver-sand;
+$dark-gray-200: $_granite-ray;
+$dark-gray-300: $_dark-liver;
+
+// Gral__Black
+$pure-black: $_dark-charcoal;
+
+// Gral__Blue
+$pure-blue: $_blue;
+$blue-100: $_blues-apphire;
+$blue-200: $_warm-black;
+$dark-blue: $_rich-black;
+
+// Gral__Red
+$pure-red: $_cinnabar;
+$red-100: $_international-orange;
+$red-200: $_alabama-crimson;
+
+// Gral__Purple
+$purple: $_chinese-purple;
+
+// Background
+// Background__Gray
+$background-gray: $pure-black;
+$background-blue: $dark-blue;
+
+// Background__White
+$background-white: $pure-white;
+
+// Text
+$text-color: $pure-black;
+$text-color-light: $pure-white;
+$text-color-contact: $pure-red;
+$text-color-subtitle: $dark-gray;
+$text-color-start: $blue-100;
+$text-color-ultra: $purple;
+$text-color-mega: $red-200;
+$text-color-link: $pure-blue;
+$text-color-receive-email: $pure-red;
