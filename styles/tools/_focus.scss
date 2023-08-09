@@ -1,15 +1,14 @@
 @use '../settings/variables';
 
 @mixin focus-anchor {
-	// outline: variables.$border-1 solid variables.$green;
-	padding: variables.$space-2;
-	border-radius: variables.$border-radius-2;
+	outline-width: variables.$border-1;
+	outline-style: solid;
+	outline-offset: variables.$space-2;
 }
 
 @mixin focus-skip-link {
-	// outline: variables.$border-1 solid variables.$green;
+	outline: variables.$border-1 solid variables.$pure-blue;
 	outline-offset: variables.$space-2;
-	border-radius: variables.$border-radius-2;
 }
 
 @mixin focus-input {

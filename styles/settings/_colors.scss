@@ -7,7 +7,7 @@ $_silver-sand: #c4c4c4;
 $_granite-ray: #666;
 $_dark-liver: #4f4c4c;
 $_dark-charcoal: #333;
-$_black: #000;
+$_black: #010101;
 $_blue: #0006ff;
 $_blues-apphire: #035a76;
 $_warm-black: #103d4a;
@@ -31,6 +31,7 @@ $dark-gray-300: $_dark-liver;
 
 // Gral__Black
 $pure-black: $_dark-charcoal;
+$the-darkest-black: $_black;
 
 // Gral__Blue
 $pure-blue: $_blue;
@@ -49,15 +50,29 @@ $purple: $_chinese-purple;
 // Background
 // Background__Gray
 $background-gray: $pure-black;
+
+// Background__Black
+$background-pure-black: $the-darkest-black;
+
+// Background__Blue
+$background-pure-blue: $pure-blue;
 $background-blue: $dark-blue;
+$background-blue-200: $blue-200;
 
 // Background__White
 $background-white: $pure-white;
 
+// Background__Red
+$background-pure-red: $pure-red;
+$background-red: $red-200;
+
+// Background__Purple
+$background-purple: $purple;
+
 // Text
 $text-color: $pure-black;
 $text-color-light: $pure-white;
-$text-color-contact: $pure-red;
+$text-color-red: $pure-red;
 $text-color-subtitle: $dark-gray;
 $text-color-start: $blue-100;
 $text-color-ultra: $purple;

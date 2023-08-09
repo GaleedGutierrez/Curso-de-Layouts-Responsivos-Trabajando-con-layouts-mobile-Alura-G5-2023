@@ -1,0 +1,14 @@
+@use '../../settings/variables';
+
+.g-header {
+	border-color: variables.$background-pure-black;
+	background-color: variables.$background-pure-black;
+
+	&__container {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: variables.$max-width;
+		padding-inline: variables.$space-10;
+		margin-inline: auto;
+	}
+}

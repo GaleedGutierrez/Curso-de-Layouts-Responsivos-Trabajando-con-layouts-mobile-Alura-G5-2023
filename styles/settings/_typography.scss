@@ -14,8 +14,9 @@ $weight-extrabold: 800;
 		local('Open Sans'),
 		local('Open-Sans'),
 		local('Open_Sans'),
-		url('@fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
-	font-weight: $weight-bold;
+		local('OpenSans'),
+		url('@fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+	font-weight: $weight-regular;
 	font-style: normal;
 	font-display: swap;
 }
@@ -26,8 +27,22 @@ $weight-extrabold: 800;
 		local('Open Sans'),
 		local('Open-Sans'),
 		local('Open_Sans'),
-		url('@fonts/OpenSans/OpenSans-Bold.woff2') format('woff2');
-	font-weight: $weight-regular;
+		local('OpenSans'),
+		url('@fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: $weight-semibold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src:
+		local('Open Sans'),
+		local('Open-Sans'),
+		local('Open_Sans'),
+		local('OpenSans'),
+		url('@fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+	font-weight: $weight-bold;
 	font-style: normal;
 	font-display: swap;
 }
