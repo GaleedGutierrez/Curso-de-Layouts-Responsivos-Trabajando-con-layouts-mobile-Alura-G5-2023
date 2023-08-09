@@ -9,11 +9,9 @@
 	border-radius: variables.$border-2;
 	margin-inline: variables.$space-6;
 	margin-block-start: variables.$space-6;
-
-	// background-color: variables.$green;
-	font-weight: variables.$weight-semibold;
-
-	// color: variables.$text-color-dark;
+	background-color: variables.$background-pure-blue;
+	font-weight: variables.$weight-bold;
+	color: variables.$text-color-light;
 	transition: transform variables.$time-001;
 	transform: translateY(-200%);
 
