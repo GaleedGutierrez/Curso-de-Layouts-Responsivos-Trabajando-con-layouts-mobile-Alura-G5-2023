@@ -1,8 +1,8 @@
 @use '../../settings/variables';
 
 .g-header {
-	border-color: variables.$background-pure-black;
-	background-color: variables.$background-pure-black;
+	border-color: variables.$background-black;
+	background-color: variables.$background-black;
 
 	&__container {
 		flex-direction: row;
