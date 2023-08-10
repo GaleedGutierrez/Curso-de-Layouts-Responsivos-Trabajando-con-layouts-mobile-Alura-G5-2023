@@ -1,0 +1,44 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-highlighted {
+	gap: variables.$space-9;
+	padding-block: variables.$space-8;
+	background-color: variables.$background-dark-white;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__info-container {
+		&:focus-visible {
+			@include mixins.focus-anchor;
+		}
+	}
+
+	&__panel {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__panel-img {
+		max-width: 54.2rem;
+		margin-block-end: variables.$space-4;
+		box-shadow: 0 2px 10px 5px rgb(0 0 0 / 20%);
+	}
+
+	&__description {
+		padding-inline: variables.$space-6;
+
+		@include mixins.heading-lg;
+	}
+
+	&__button-container {
+		width: 100%;
+		padding-inline: variables.$space-4;
+
+		@include mixins.center-flex;
+	}
+
+	@include mixins.center-flex(column);
+}

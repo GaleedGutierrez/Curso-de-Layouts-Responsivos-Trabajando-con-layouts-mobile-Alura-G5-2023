@@ -1,8 +1,8 @@
 @use '../settings/variables';
 
 @mixin focus-anchor {
-	outline-width: variables.$border-1;
 	outline-style: solid;
+	outline-width: variables.$border-1;
 	outline-offset: variables.$space-2;
 }
 
@@ -16,6 +16,7 @@
 }
 
 @mixin focus-button {
-	// outline: variables.$border-1 solid variables.$green;
+	outline-style: solid;
+	outline-width: variables.$border-1;
 	outline-offset: variables.$space-2;
 }

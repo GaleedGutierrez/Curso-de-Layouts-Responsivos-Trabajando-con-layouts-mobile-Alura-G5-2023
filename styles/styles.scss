@@ -31,6 +31,7 @@
 // Organisms
 @use './organisms/header/header';
 @use './organisms/llamada/llamada';
+@use './organisms/highlighted/highlighted';
 
 // Utilities en vez de important
 @use './utilities/visible';

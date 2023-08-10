@@ -1,14 +1,19 @@
 @use '../settings/variables';
 @use '../tools/mixins';
 
-.a-button {
+%button-base {
+	display: block;
 	width: 100%;
+	max-width: 35rem;
+	padding-inline: variables.$space-3;
 	padding-block: variables.$space-4;
-	border: variables.$border-05 solid variables.$pure-red;
 	border-radius: variables.$border-radius-2;
 	font-weight: variables.$weight-bold;
-	color: variables.$text-color-light;
 	text-align: center;
+}
+
+.a-button {
+	border: variables.$border-05 solid variables.$pure-red;
 
 	&:hover {
 		background-color: variables.$background-pure-red;
@@ -17,11 +22,39 @@
 	&:focus-visible {
 		outline-color: variables.$pure-red;
 
-		@include mixins.focus-anchor;
+		@include mixins.focus-button;
 	}
 
 	&:active {
 		border-color: variables.$red-200;
 		background-color: variables.$background-red;
 	}
+
+	@extend %button-base;
+}
+
+.a-button--dark-red {
+	border: variables.$border-05 solid variables.$red-200;
+	border-color: variables.$background-red;
+	color: variables.$text-color-red;
+
+	&:hover {
+		border-color: variables.$pure-red;
+		background-color: variables.$background-pure-red;
+		color: variables.$text-color;
+	}
+
+	&:focus-visible {
+		outline-color: variables.$red-200;
+
+		@include mixins.focus-button;
+	}
+
+	&:active {
+		border-color: variables.$red-200;
+		background-color: variables.$background-red;
+		color: variables.$text-color-light;
+	}
+
+	@extend %button-base;
 }
