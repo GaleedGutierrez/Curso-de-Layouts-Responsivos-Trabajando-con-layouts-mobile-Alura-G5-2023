@@ -28,6 +28,7 @@ $dark-gray: $_dark-liver;
 $dark-gray-100: $_silver-sand;
 $dark-gray-200: $_granite-ray;
 $dark-gray-300: $_dark-liver;
+$dark-gray-400: $_dark-charcoal;
 
 // Gral__Black
 $pure-black: $_black;
@@ -48,7 +49,7 @@ $purple: $_chinese-purple;
 
 // Background
 // Background__Gray
-$background-gray: $pure-black;
+$background-gray: $dark-gray-400;
 
 // Background__Black
 $background-black: $pure-black;

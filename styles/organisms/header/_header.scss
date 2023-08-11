@@ -15,18 +15,6 @@
 		padding-block: variables.$space-4;
 	}
 
-	&__logo {
-		display: flex;
-		width: 90%;
-		max-width: 19.8rem;
-
-		&:focus-visible {
-			outline-color: variables.$pure-white;
-
-			@include mixins.focus-anchor;
-		}
-	}
-
 	&__nav-list {
 		display: flex;
 		gap: variables.$space-6;

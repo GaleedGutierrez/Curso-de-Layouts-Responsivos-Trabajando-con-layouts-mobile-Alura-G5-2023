@@ -1,0 +1,21 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-about-us {
+	display: flex;
+	gap: variables.$space-18;
+	box-sizing: content-box;
+	justify-content: space-between;
+	max-width: variables.$max-width;
+	margin-inline: auto;
+
+	&__plataforms {
+		padding-block-start: variables.$space-4;
+		border-block-start: variables.$border-025 solid variables.$dark-gray;
+	}
+
+	&__img {
+		display: block;
+		max-width: 34.8rem;
+	}
+}

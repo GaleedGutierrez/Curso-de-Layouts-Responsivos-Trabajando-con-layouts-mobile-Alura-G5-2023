@@ -1,0 +1,14 @@
+@use '../settings/variables';
+@use '../tools/mixins';
+
+.a-logo {
+	display: flex;
+	width: 90%;
+	max-width: 19.8rem;
+
+	&:focus-visible {
+		outline-color: variables.$pure-white;
+
+		@include mixins.focus-anchor;
+	}
+}
