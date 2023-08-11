@@ -25,13 +25,17 @@
 
 // Atoms
 @use './atoms/buttons';
+@use './atoms/logo';
 
 // Molecules
+@use './molecules/nav-list';
 
 // Organisms
 @use './organisms/header/header';
 @use './organisms/llamada/llamada';
 @use './organisms/highlighted/highlighted';
+@use './organisms/diferenciales/diferenciales';
+@use './organisms/footer/footer';
 
 // Utilities en vez de important
 @use './utilities/visible';

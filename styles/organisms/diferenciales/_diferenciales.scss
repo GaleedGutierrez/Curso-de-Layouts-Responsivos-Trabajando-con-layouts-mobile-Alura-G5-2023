@@ -1,0 +1,42 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-differentials {
+	max-width: 80rem;
+	padding-inline: variables.$space-7;
+	margin-inline: auto;
+	margin-block: variables.$space-18;
+
+	&__title {
+		display: inline-block;
+		margin-block-end: variables.$space-7;
+		text-align: center;
+	}
+
+	&__lista {
+		display: flex;
+		gap: variables.$space-9;
+		flex-direction: column;
+	}
+
+	&__icon-title-container {
+		display: flex;
+		gap: variables.$space-3;
+		align-items: center;
+		margin-block-end: variables.$space-3;
+	}
+
+	&__img-item {
+		width: 3.2rem;
+
+		&--chemistry {
+			height: 4rem;
+		}
+	}
+
+	&__texto-item {
+		max-width: 25.8rem;
+	}
+
+	@include mixins.center-flex(column);
+}

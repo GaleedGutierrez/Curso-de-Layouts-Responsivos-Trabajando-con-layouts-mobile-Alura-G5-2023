@@ -1,0 +1,7 @@
+@use '../../settings/variables';
+
+.g-footer {
+	padding-inline: variables.$space-4;
+	padding-block: variables.$space-8;
+	background-color: variables.$background-gray;
+}

@@ -1,0 +1,27 @@
+@use '../settings/variables';
+@use '../tools/mixins';
+
+.m-nav-list {
+	display: flex;
+	gap: variables.$space-6;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__link {
+		color: variables.$text-color-light;
+
+		&:hover {
+			color: variables.$dark-gray;
+		}
+
+		&:focus-visible {
+			outline-color: variables.$pure-white;
+
+			@include mixins.focus-anchor;
+		}
+
+		&:active {
+			color: variables.$dark-gray-100;
+		}
+	}
+}
