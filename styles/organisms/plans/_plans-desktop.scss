@@ -1,0 +1,21 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-plans {
+	&__title {
+		margin-block-end: variables.$space-13;
+	}
+
+	&__cards-container {
+		gap: variables.$space-8;
+		flex-direction: row;
+	}
+
+	&__card {
+		max-width: 30rem;
+
+		&:nth-child(2) {
+			transform: scale(1.11);
+		}
+	}
+}

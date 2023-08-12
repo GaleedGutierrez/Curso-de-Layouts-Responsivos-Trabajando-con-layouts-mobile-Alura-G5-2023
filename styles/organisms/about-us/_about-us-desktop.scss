@@ -2,12 +2,14 @@
 @use '../../tools/mixins';
 
 .g-about-us {
-	display: flex;
-	gap: variables.$space-18;
-	box-sizing: content-box;
-	justify-content: space-between;
-	max-width: variables.$max-width;
-	margin-inline: auto;
+	&__container {
+		display: flex;
+		gap: variables.$space-18;
+		box-sizing: content-box;
+		justify-content: space-between;
+		max-width: variables.$max-width;
+		margin-inline: auto;
+	}
 
 	&__plataforms {
 		padding-block-start: variables.$space-4;

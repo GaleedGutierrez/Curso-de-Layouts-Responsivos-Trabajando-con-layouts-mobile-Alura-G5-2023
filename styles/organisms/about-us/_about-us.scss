@@ -2,8 +2,12 @@
 @use '../../tools/mixins';
 
 .g-about-us {
-	padding-inline: variables.$space-7;
-	margin-block-end: variables.$space-16;
+	background-color: variables.$background-lightest-white;
+
+	&__container {
+		padding-inline: variables.$space-7;
+		padding-block: variables.$space-16;
+	}
 
 	&__title {
 		margin-block-end: variables.$space-7;

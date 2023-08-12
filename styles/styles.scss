@@ -27,9 +27,11 @@
 @use './atoms/buttons';
 @use './atoms/logo';
 @use './atoms/icon';
+@use './atoms/title';
 
 // Molecules
 @use './molecules/nav-list';
+@use './molecules/card';
 
 // Organisms
 @use './organisms/header/header';
@@ -37,10 +39,12 @@
 @use './organisms/highlighted/highlighted';
 @use './organisms/diferenciales/diferenciales';
 @use './organisms/about-us/about-us';
+@use './organisms/plans/plans';
 @use './organisms/footer/footer';
 
 // Utilities en vez de important
 @use './utilities/visible';
+@use './utilities/sr-only';
 
 @media screen and (width >= 1024px) {
 	/* stylelint-disable-next-line no-invalid-position-at-import-rule */
