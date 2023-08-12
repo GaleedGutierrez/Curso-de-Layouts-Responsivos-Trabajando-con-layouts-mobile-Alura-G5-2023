@@ -1,0 +1,40 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-institutional {
+	gap: variables.$space-8;
+	padding-block-end: variables.$space-6;
+	background-color: variables.$background-lightest-white;
+
+	&__content-container {
+		gap: variables.$space-8;
+
+		@include mixins.center-flex(column);
+	}
+
+	&__address-container {
+		display: flex;
+		gap: variables.$space-2;
+		flex-direction: column;
+		font-size: variables.$fs-title-xl;
+		font-style: normal;
+
+		@include mixins.center-flex(column);
+	}
+
+	&__link {
+		color: variables.$text-color-link;
+
+		&:focus-visible {
+			outline-color: variables.$pure-blue;
+
+			@include mixins.focus-anchor;
+		}
+	}
+
+	&__video {
+		max-width: 67.6rem;
+	}
+
+	@include mixins.center-flex(column);
+}

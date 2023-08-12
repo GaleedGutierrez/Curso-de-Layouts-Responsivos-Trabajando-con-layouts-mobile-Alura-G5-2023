@@ -3,7 +3,7 @@
 
 .g-contact {
 	gap: variables.$space-6;
-	padding-block: variables.$space-8;
+	padding-block: variables.$space-8 variables.$space-12;
 	background-color: variables.$background-lightest-white;
 
 	@include mixins.center-flex(column);

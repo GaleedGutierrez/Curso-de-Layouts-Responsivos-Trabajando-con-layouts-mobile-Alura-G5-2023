@@ -77,7 +77,7 @@
 			</li>
 			<li>
 				<a href="#institutional" class="skip-link"
-					>Ir a la sección de contacto</a
+					>Ir a la sección institucional</a
 				>
 			</li>
 			<li>
@@ -213,6 +213,7 @@
 							src="~@images/pictures/image-2.webp"
 							alt=""
 							class="g-highlighted__panel-img"
+							loading="lazy"
 						/>
 						<figcaption class="g-highlighted__description">
 							¿Trabajas con fotografía? Conozca estos consejos
@@ -239,6 +240,7 @@
 								class="g-differentials__img-item"
 								src="~@images/icons/icono-reloj.webp"
 								alt=""
+								loading="lazy"
 							/>
 							<h3 class="a-title-base">Tiempo</h3>
 						</div>
@@ -253,6 +255,7 @@
 								class="g-differentials__img-item"
 								src="~@images/icons/icono-dinero.webp"
 								alt=""
+								loading="lazy"
 							/>
 							<h3 class="a-title-base">Enfoque</h3>
 						</div>
@@ -268,6 +271,7 @@
 								class="g-differentials__img-item g-differentials__img-item--chemistry"
 								src="~@images/icons/icono-quimica.webp"
 								alt=""
+								loading="lazy"
 							/>
 							<h3 class="a-title-base">Especialistas</h3>
 						</div>
@@ -420,8 +424,9 @@
 					</div>
 					<img
 						class="g-about-us__img"
-						src="../assets/images/pictures/sobre-apeperia.webp"
+						src="~@images/pictures/sobre-apeperia.webp"
 						alt=""
+						loading="lazy"
 					/>
 				</div>
 			</section>
@@ -516,8 +521,33 @@
 				>
 			</section>
 
-			<section id="institutional">
-				<h2>Institucional</h2>
+			<section id="institutional" class="g-institutional">
+				<h2 class="a-title-base">Institucional</h2>
+				<p>Un poco más sobre Apeperia</p>
+				<div class="g-institutional__content-container">
+					<address class="g-institutional__address-container">
+						<p>Calle Vergueiro, 3185</p>
+						<p>Villa Mariana, São Paulo</p>
+						<a
+							class="g-institutional__link"
+							href="tel:+551155712751"
+							><span class="is-sr-only">Llámanos al: </span>+55 11
+							55712751</a
+						>
+						<a
+							class="g-institutional__link"
+							href="mailto:contato@apeperia.com"
+							><span class="is-sr-only"
+								>Envíanos un correo a: </span
+							>contato@apeperia.com</a
+						>
+					</address>
+					<video
+						src="../assets/video/formacion-java.mp4"
+						controls
+						class="g-institutional__video"
+					></video>
+				</div>
 			</section>
 		</main>
 
@@ -549,62 +579,64 @@
 				</a>
 				<div class="g-footer__social-media-container"></div>
 			</div>
-			<ul class="m-nav-list">
-				<li>
-					<a
-						href="#about-us"
-						aria-label="Ir a la sección sobre la empresa"
-						class="m-nav-list__link"
-					>
-						Sobre
-					</a>
-				</li>
-				<li>
-					<a
-						href="#plans"
-						aria-label="Ir a la sección de plans"
-						class="m-nav-list__link"
-					>
-						Planes
-					</a>
-				</li>
-				<li>
-					<a
-						href="#"
-						aria-label="Ir a la sección de blog"
-						class="m-nav-list__link"
-					>
-						Blog
-					</a>
-				</li>
-				<li>
-					<a
-						href="#highlighted"
-						aria-label="Ir a la sección de destacados"
-						class="m-nav-list__link"
-					>
-						Destacados
-					</a>
-				</li>
-				<li>
-					<a
-						href="#institutional"
-						aria-label="Ir a la sección sobre la ubicación de la empresa"
-						class="m-nav-list__link"
-					>
-						Institucional
-					</a>
-				</li>
-				<li>
-					<a
-						href="#contact"
-						aria-label="Ir a la sección de contacto"
-						class="m-nav-list__link"
-					>
-						Contacto
-					</a>
-				</li>
-			</ul>
+			<nav>
+				<ul class="m-nav-list">
+					<li>
+						<a
+							href="#about-us"
+							aria-label="Ir a la sección sobre la empresa"
+							class="m-nav-list__link"
+						>
+							Sobre
+						</a>
+					</li>
+					<li>
+						<a
+							href="#plans"
+							aria-label="Ir a la sección de plans"
+							class="m-nav-list__link"
+						>
+							Planes
+						</a>
+					</li>
+					<li>
+						<a
+							href="#"
+							aria-label="Ir a la sección de blog"
+							class="m-nav-list__link"
+						>
+							Blog
+						</a>
+					</li>
+					<li>
+						<a
+							href="#highlighted"
+							aria-label="Ir a la sección de destacados"
+							class="m-nav-list__link"
+						>
+							Destacados
+						</a>
+					</li>
+					<li>
+						<a
+							href="#institutional"
+							aria-label="Ir a la sección sobre la ubicación de la empresa"
+							class="m-nav-list__link"
+						>
+							Institucional
+						</a>
+					</li>
+					<li>
+						<a
+							href="#contact"
+							aria-label="Ir a la sección de contacto"
+							class="m-nav-list__link"
+						>
+							Contacto
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</footer>
 	</body>
 </html>

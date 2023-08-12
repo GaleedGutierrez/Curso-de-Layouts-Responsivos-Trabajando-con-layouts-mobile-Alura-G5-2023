@@ -6,7 +6,7 @@
 // Elements
 @use './elements/body';
 @use './elements/headings';
-@use './elements/img';
+@use './elements/multimedia';
 @use './elements/html';
 @use './elements/link';
 @use './elements/list';
@@ -41,6 +41,7 @@
 @use './organisms/about-us/about-us';
 @use './organisms/plans/plans';
 @use './organisms/contact/contact';
+@use './organisms/institutional/institutional';
 @use './organisms/footer/footer';
 
 // Utilities en vez de important
