@@ -1,0 +1,13 @@
+@use '../../settings/variables';
+@use '../../tools/mixins';
+
+.g-plans {
+	padding-inline: variables.$space-7;
+	padding-block: variables.$space-12;
+
+	&__cards-container {
+		gap: variables.$space-8;
+
+		@include mixins.center-flex(column);
+	}
+}

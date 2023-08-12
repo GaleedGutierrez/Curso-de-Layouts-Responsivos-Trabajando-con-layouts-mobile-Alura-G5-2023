@@ -1,0 +1,12 @@
+@use '../settings/variables';
+
+.a-title {
+	margin-block-end: variables.$space-7;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.a-title-base {
+	text-align: center;
+	text-transform: uppercase;
+}

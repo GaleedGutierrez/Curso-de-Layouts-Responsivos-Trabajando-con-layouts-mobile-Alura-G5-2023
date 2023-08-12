@@ -7,13 +7,15 @@
 	max-width: 35rem;
 	padding-inline: variables.$space-3;
 	padding-block: variables.$space-4;
+	border-width: variables.$border-05;
+	border-style: solid;
 	border-radius: variables.$border-radius-2;
 	font-weight: variables.$weight-bold;
 	text-align: center;
 }
 
 .a-button {
-	border: variables.$border-05 solid variables.$pure-red;
+	border-color: variables.$pure-red;
 
 	&:hover {
 		background-color: variables.$background-pure-red;
@@ -34,7 +36,6 @@
 }
 
 .a-button--dark-red {
-	border: variables.$border-05 solid variables.$red-200;
 	border-color: variables.$background-red;
 	color: variables.$text-color-red;
 
@@ -55,6 +56,73 @@
 		background-color: variables.$background-red;
 		color: variables.$text-color-light;
 	}
+}
 
-	@extend %button-base;
+.a-button--start {
+	border-color: variables.$blue-100;
+	color: variables.$text-color-start;
+
+	&:hover {
+		border-color: variables.$blue-200;
+		background-color: variables.$blue-200;
+		color: variables.$text-color-light;
+	}
+
+	&:focus-visible {
+		outline-color: variables.$blue-100;
+
+		@include mixins.focus-button;
+	}
+
+	&:active {
+		border-color: variables.$blue-100;
+		background-color: variables.$blue-100;
+		color: variables.$text-color-light;
+	}
+}
+
+.a-button--ultra {
+	border-color: variables.$purple;
+	color: variables.$text-color-ultra;
+
+	&:hover {
+		border-color: rgba(variables.$purple, 75%);
+		background-color: rgba(variables.$background-purple, 75%);
+		color: variables.$text-color-light;
+	}
+
+	&:focus-visible {
+		outline-color: variables.$purple;
+
+		@include mixins.focus-button;
+	}
+
+	&:active {
+		border-color: variables.$purple;
+		background-color: variables.$background-purple;
+		color: variables.$text-color-light;
+	}
+}
+
+.a-button--mega {
+	border-color: variables.$red-200;
+	color: variables.$text-color-mega;
+
+	&:hover {
+		border-color: rgba(variables.$red-200, 75%);
+		background-color: rgba(variables.$background-red, 75%);
+		color: variables.$text-color-light;
+	}
+
+	&:focus-visible {
+		outline-color: variables.$red-200;
+
+		@include mixins.focus-button;
+	}
+
+	&:active {
+		border-color: variables.$red-200;
+		background-color: variables.$background-red;
+		color: variables.$text-color-light;
+	}
 }
