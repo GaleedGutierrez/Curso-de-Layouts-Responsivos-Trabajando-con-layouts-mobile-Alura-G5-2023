@@ -29,7 +29,8 @@
 			"@utils/*": ["src/utils/*"],
 			"@templates/*": ["src/templates/*"],
 			"@interface/*": ["src/interface/*"],
-			"@images/*": ["assets/images/*"]
+			"@images/*": ["assets/images/*"],
+			"@video/*": ["assets/video/*"]
 		},
 
 		/* Emit */
