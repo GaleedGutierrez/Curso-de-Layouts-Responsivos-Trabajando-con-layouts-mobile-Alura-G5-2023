@@ -1,0 +1,18 @@
+@use '../../settings/variables';
+
+.g-footer {
+	&__container {
+		max-width: variables.$max-width;
+		padding-inline: variables.$space-10;
+		margin-inline: auto;
+	}
+
+	&__logo-social-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__list-container {
+		justify-content: start;
+	}
+}

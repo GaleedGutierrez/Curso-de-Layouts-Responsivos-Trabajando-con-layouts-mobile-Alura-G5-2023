@@ -20,6 +20,7 @@ const common: Configuration = {
 			'@interface': path.resolve(__dirname, './src/interface/'),
 			'@styles': path.resolve(__dirname, './styles/'),
 			'@images': path.resolve(__dirname, './assets/images/'),
+			'@video': path.resolve(__dirname, './assets/video/'),
 			'@fonts': path.resolve(__dirname, './assets/fonts/'),
 		},
 	},
