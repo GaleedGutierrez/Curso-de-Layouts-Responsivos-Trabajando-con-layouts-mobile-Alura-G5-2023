@@ -32,6 +32,11 @@ const common: Configuration = {
 				loader: 'babel-loader',
 			},
 			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
+			},
+			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: 'asset/resource',
 				generator: {

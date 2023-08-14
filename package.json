@@ -1,7 +1,7 @@
 {
 	"name": "curso-de-layouts-responsivos-trabajando-con-layouts-mobile-alura-g5-2023",
 	"version": "1.0.0",
-	"type": "commonjs",
+	"type": "module",
 	"scripts": {
 		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack --config webpack.prod.ts",
 		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --config webpack.dev.ts --stats-error-details",
