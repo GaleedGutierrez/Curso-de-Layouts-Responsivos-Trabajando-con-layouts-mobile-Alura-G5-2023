@@ -43,6 +43,9 @@ const config: Configuration = {
 	},
 	performance: {
 		hints: 'error',
+		assetFilter(assetFilename) {
+			return !assetFilename.endsWith('.mp4');
+		},
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
